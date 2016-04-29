@@ -13,7 +13,7 @@ var canva1s = document.getElementById('canvas'),
 if(!+[1,]){
   maxStars=100;
 }else{
-  maxStars=1000;
+  maxStars=800;
 }
 
 var canvas2 = document.createElement('canvas'),
