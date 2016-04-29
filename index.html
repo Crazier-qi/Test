@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>智邮普创工作室</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="HandheldFriendly" content="true">
@@ -9,25 +9,52 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="animate.css">
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	
+	<style>
+		#div1 #img1{
+			width: 60px;
+			height: 60px;
+		}
+		#img1{
+			margin-top: -15px;
+			margin-left: 20px;
+		}
+		#example-navbar-collapse{
+			background-color: black;
+		}
+		.collapse{
+			width: 50px;
+			height: 150px;
+			background-color: black;
+		}
+
+		
+	</style>
 </head>
 <body>
 <div class="header">
 	<div class="container">
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<nav class="navbar navbar-default" role="navigation">
-			   <div class="navbar-header">
-			      <a class="navbar-brand" href="#"><img src="" alt="05.png"></a>
-			   </div>
-			   <div>
+				<div class="navbar-header">
+			   		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+				   		<span class="sr-only">切换导航</span>
+				   		<span class="icon-bar"></span>
+				   		<span class="icon-bar"></span>
+				   		<span class="icon-bar"></span>
+			   		</button>
+			   		<div id="div1">
+			      	<a class="navbar-brand" href="#"><img src="images/05.png" id="img1" alt="05.png"></a>
+			      	<div class="logo-p" style="float:right; color:#fff; margin-top:20px;font-weight:bold;font-size:16px">智邮普创工作室</div>
+			    	</div>
+				</div>
+			    <div class="collapse navbar-collapse" id="example-navbar-collapse">
 			      <ul class="nav navbar-nav">
 			         <li><a href="#"><i class="icon-github icon-2x"></i></a></li>
 			         <li><a href="#"><i class="icon-group icon-2x"></i></a></li>
 			         <li><a href="#"><i class="icon-comments icon-2x"></i></a></li>
 			      </ul>
-			   </div>
+			    </div>
 			</nav>
 		</div>
 
@@ -35,8 +62,8 @@
 		    <canvas id="canvas" style="position: absolute;left:0;top: 0;z-index: -1;"></canvas>
 			<div class="row">
 				<div class="main_p" style="z-index: 9999;"><p style="font-size: 40px;">slogn:open.equal.respect</p></div>
-				<a  href="#more" class="more"><div class="col-md-6 main_btn"><p>了解更多</p></div></a>
-				<a  href="#" class="more"><div class="col-md-6 main_btn" style="background: rgb(187,87,197);"><p>加入我们</p></div></a>					
+				<a  href="#more" class="more" id="turnTomore"><div class="col-md-6 main_btn"><p>了解更多</p></div></a>
+				<a  href="http://www.baidu.com" class="more" ><div class="col-md-6 main_btn join_us"><p>加入我们</p></div></a>					
 			</div>
 		</div>
 	</div>
@@ -46,17 +73,20 @@
 
 <div class="middle">
 	<div class="container">
-		<div class="box">
+		<div class="box"  id="more">
 			<div class="squre">
 				<div id="container" class="animated bounceInLeft"><div id="output"></div></div>	
 				<div id="container1" class="animated bounceInRight"><div id="output1"></div></div>
 			</div>
-			<div class="row" id="more">
+			<div class="row">
 				<div class="col-md-4 animated fadeInLeft">
 					<div class="circle animated rotateIn" style="background: rgb(171,71,188);">
 						<div class="circle_word">
 							<p>安全</p>
 						</div>
+					</div>
+					<div class="p_team" style="margin-left:60px;margin-top:20px">
+					<p style="font-size:14px">如果你无法间接地表达你的想法，那只能说明你还不够了解他</p>
 					</div>
 				</div>
 					<div class="col-md-4 animated fadeInLeft">
@@ -65,12 +95,18 @@
 								<p>运维</p>
 							</div>
 						</div>
+						<div class="p_team" style="margin-left:20px;margin-top:20px">
+						<p style="font-size:14px;">如果你无法间接地表达你的想法，那只能说明你还不够了解他。</p>
+						</div>
 					</div>
 				<div class="col-md-4 animated fadeInLeft">
 					<div class="circle animated rotateIn" style="background: rgb(93,108,190);">
 						<div class="circle_word">
 							<p>web开发</p>
 						</div>
+					</div>
+					<div class="p_team" style="margin-right:70px;margin-top:20px">
+					<p style="font-size:14px">如果你无法间接地表达你的想法，那只能说明你还不够了解他。</p>
 					</div>
 				</div>
 			</div>			
@@ -87,18 +123,18 @@
    				<span class="prev"><i class="icon-angle-left icon-4x"></i></span>
     			<span class="next"><i class="icon-angle-right icon-4x"></i></span>
     			<div class="img-list">
-        			<ul>
-			            <li><i class="icon-facebook-sign icon-4x"></i></li>
-			            <li><i class="icon-cloud icon-4x"></i></li>
-			            <li><i class="icon-comments icon-4x"></i></li>
-			            <li><i class="icon-desktop icon-4x"></i></li>
-			            <li><i class="icon-file icon-4x"></i></li>
-			            <li><i class="icon-phone-sign icon-4x"></i></li>
-			            <li><i class="icon-github-sign icon-4x"></i></li>
+        			<ul >
+			           <a href="http://www.baidu.com" style="color:#333"><li><i class="icon-facebook-sign icon-4x"></i></li></a>
+			            <a href="http://www.baidu.com" style="color:#333"><li><i class="icon-cloud icon-4x"></i></li></a>
+			            <a href="http://www.baidu.com" style="color:#333"><li><i class="icon-comments icon-4x"></i></li></a>
+			            <a href="http://www.baidu.com" style="color:#333"><li><i class="icon-desktop icon-4x"></i></li></a>
+			            <a href="http://www.baidu.com" style="color:#333"><li><i class="icon-file icon-4x"></i></li></a>
+			            <a href="http://www.baidu.com" style="color:#333"><li><i class="icon-phone-sign icon-4x"></i></li></a>
+			            <a href="http://www.baidu.com" style="color:#333"><li><i class="icon-github-sign icon-4x"></i></li></a>
 			        </ul>
     			</div>
 			</div>
-			<i class="icon-group icon-2x">&nbsp&nbsp&nbsp&nbsp团队介绍</i>
+			<i class="icon-group icon-2x">&nbsp;&nbsp;&nbsp;&nbsp;团队介绍</i>
 			<div class="row" style="padding-top: 50px;">
 				<div class="col-md-1"></div>				
 				<div class="col-md-5"><img src="images/content1.jpg" style="width: 380px;height: 225px;"></div>
@@ -141,7 +177,7 @@
 						<h3 class="widget-title">关于我们</h3>
 						<div class="widget-body">
 							<p>
-								<b>博客：</b>
+								<b>群博：</b>
 								<a href="www.smartxupt.com">www.smartxupt.com</a>
 							</p>
 						</div>
@@ -151,9 +187,9 @@
 						<div class="widget-body">
 							<p>
 								
-								<a href="www.xiyounet.org">西邮网络科技协会</a><br>
-								<a href="www.xiyoulinux.org">西邮linux兴趣小组</a><br>
-								<a href="www.xiyoulinux.org">计算机应用技术协会</a>
+								<a href="www.xiyounet.org">西安邮电大学网络科技协会</a><br>
+								<a href="www.xiyoulinux.org">西安邮电大学linux兴趣小组</a><br>
+								<a href="www.xiyoulinux.org">西安邮电大学计算机应用技术协会</a>
 							</p>
 						</div>
 					</div>
@@ -166,10 +202,11 @@
     	</div>
     </footer>
 </body>
-<script type="text/javascript" src="js/yuzhou.js"></script>
-<script type="text/javascript" src="js/scroll.js"></script>
-<script type="text/javascript" src="js/vector.js"></script>
-	<script type="text/javascript">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>">
+		<script type="text/javascript" src="js/yuzhou.js"></script>
+		<script type="text/javascript" src="js/scroll.js"></script>
+		<script type="text/javascript" src="js/vector.js"></script>
+		<script type="text/javascript">
 		$(function(){
 	// 初始化 传入dom id
 	var victor = new Victor("container", "output");
@@ -195,5 +232,56 @@ $(function(){
 
 	
 });
+
+//滚动后导航固定
+$(function(){
+	$(window).scroll(function(){
+          height = $(window).scrollTop();
+   	  	  if(height > 200){
+   	  	  	$('.navbar').fadeIn();
+   	  	  }else{
+   	  	  	$('.navbar').fadeOut();
+   	  	  };
+
+});
+});
+
+//响应式标题栏右侧
+
+$(document).ready(function(){
+ $("button").click(function(){
+  $("nav > div").removeClass("collapse");
+ });
+});
+
+
+//中部运动min-width<1000
+// $(document).ready(function(){
+// 	width = $(window).width();
+// 	if(width<1000)
+// 	{
+//  		$("$("div.animated")").removeAttr("id");
+// 	}
+//  });
+
+//锚点间平滑滚动
+//改进,去除url地址栏后锚点显示
+$(function(){  
+  $('a[href*=#],area[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body').animate({
+          scrollTop: targetOffset
+        },
+        1000);
+        return false;
+      }
+    }
+  });
+})
+
 	</script>	
 </html>
