@@ -1,38 +1,45 @@
 *{padding: 0;margin: 0;}
 .main{border: 1px solid rgb(213,213,213);}
 .header {
-  background: url("../images/~~img1.png")no-repeat 0px 0px;
+  /*background: url("../images/~~img1.png")no-repeat 0px 0px;*/
   background-size:cover;
-  min-height: 690px;
+  min-height: 663px;
   text-align: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -ms-background-size: cover;
+  margin-bottom: 20px;
 }
 .header-middle{margin: 270px auto 0;height: 300px;width: 800px;}
+.navbar{height: 60px;
+  /*transition:all 0.4s ease-out;*/
+}
 .main_btn{width: 225px;
 height: 60px;
 margin-top: 50px;
 margin-left: 130px;
-/*background: rgb(254,149,72);*/
-background-color: #5AA9EC;
-opacity: 0.7;
+background: rgba(254,149,72,0.39);
 border:2px solid #a1a1a1;
 padding:10px 40px; 
 border-radius:12px;
 -moz-border-radius:12px;
 -webkit-border-radius:12px;
 text-align:center;
-/*transition:all 0.3s ease;*/
-transition: all 2s;
--moz-transition: all 0.3s; /* Firefox 4 */
--webkit-transition: all 0.3s; /* Safari 和 Chrome */
--o-transition:all 0.3s; /* Opera */
+transition: all 0.7s;
+-moz-transition: all 0.7s;  Firefox 4 
+-webkit-transition: all 0.7s; /* Safari 和 Chrome */
+-o-transition:all 0.7s;  /*Opera*/ 
 }
 .main_btn:hover{
-  background-color: #123456
+  background: rgb(254,149,72);
   text-decoration:none;
+}
+.join_us{
+   background: rgba(187,87,197,0.39);
+}
+.join_us:hover{
+  background: rgb(187,87,197);
 }
 .main_p{margin-top: -20px;}
 .header .row>p{font-size: 40px;
@@ -54,8 +61,14 @@ transition: all 2s;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;}
-.circle_word{position: absolute;text-align: center;width: 130px;height: 25px;top: 55px;}
+  .circle:hover{
+    cursor: pointer;
 
+  }
+.circle_word{position: absolute;text-align: center;width: 130px;height: 25px;top: 55px;}
+/*.img-list>ul>li{
+  cursor: pointer;
+}*/
 .box {
   padding: 20px 0px;
   background: #fff;
@@ -68,12 +81,11 @@ transition: all 2s;
 .middle .squre{overflow: hidden;position: relative;}
 .middle p{font-size: 23px;text-align: center;color: white;}
 
-
 #container {
   position: relative;
   height: 350px;
   width: 540px;
-  margin-top:50px;
+  /*margin-top:50px;*/
   margin-left: 50px;
   display: block;
 }
@@ -87,7 +99,7 @@ transition: all 2s;
   top: 0px;
   height: 350px;
   width: 480px;
-  margin-top:50px;
+  /*margin-top:50px;*/
   margin-left: 590px;
 }
 #output1 {
@@ -303,8 +315,10 @@ ul,li { list-style:none}
 }
 .navbar{
   border:none;
-  filter:Alpha(opacity=70);
-  opacity: 0.7;
+  filter:Alpha(opacity=80);
+  opacity: 0.89;
+  /*transition:all 0.4s ease-out;*/
+  margin-bottom: 0;
 }
 .navbar-default {
   background-color: #222222;
